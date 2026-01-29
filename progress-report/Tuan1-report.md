@@ -13,4 +13,4 @@
 
 ## Kế hoạch tuần sau
 - Thiết kế database cho web bán cà phê
-- Làm chức năng đăng nhập
+- Làm chức năng đăng nhập.
