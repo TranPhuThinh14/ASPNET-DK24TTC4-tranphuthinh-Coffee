@@ -31,9 +31,9 @@ namespace Coffee
 
                     if (role.ToString() == "Admin")
                         Response.Redirect("Users.aspx");
-                    
-                        Response.Redirect("Home.aspx");
-                               // Response.Redirect("Users.aspx");
+
+                    Response.Redirect("Home.aspx");
+                    Response.Redirect("Users.aspx");
                 }
                 else
                 {
