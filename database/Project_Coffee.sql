@@ -1,4 +1,4 @@
-IF DB_ID('WebDemo') IS NULL
+﻿IF DB_ID('WebDemo') IS NULL
     CREATE DATABASE WebDemo;
 GO
 
@@ -15,3 +15,40 @@ CREATE TABLE Users (
 INSERT INTO Users VALUES
 ('admin','123456','Admin'),
 ('user1','123456','User');
+
+-- PRODUCTS
+CREATE TABLE Products (
+    Id INT IDENTITY PRIMARY KEY,
+    Name NVARCHAR(100),
+    Price DECIMAL(18,0),
+    Image NVARCHAR(200)
+);
+
+-- ORDERS
+CREATE TABLE Orders (
+    Id INT IDENTITY PRIMARY KEY,
+    Username NVARCHAR(50),
+    Total DECIMAL(18,0),
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+-- ORDER DETAILS
+CREATE TABLE OrderDetails (
+    Id INT IDENTITY PRIMARY KEY,
+    OrderId INT,
+    ProductId INT,
+    Price DECIMAL(18,0),
+    Quantity INT
+);
+USE WebDemo;
+GO
+
+ALTER TABLE Products
+ADD Description NVARCHAR(500);
+GO
+
+INSERT INTO Products (Name, Price)
+VALUES 
+(N'Cà phê sữa', 20000),
+(N'Cà phê thịt người', 25000),
+(N'Cà phê đen', 15000);

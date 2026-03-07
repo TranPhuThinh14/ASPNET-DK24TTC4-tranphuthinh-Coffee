@@ -11,7 +11,7 @@ namespace Coffee
 {
 
 
-    public partial class Users
+    public partial class AdminOrders
     {
 
         /// <summary>
@@ -24,12 +24,21 @@ namespace Coffee
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// gvUsers control.
+        /// gvOrders control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvUsers;
+        protected global::System.Web.UI.WebControls.GridView gvOrders;
+
+        /// <summary>
+        /// lblRevenue control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblRevenue;
     }
 }

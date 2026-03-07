@@ -84,3 +84,148 @@ Tuần 2 tập trung vào việc xây dựng nền tảng hệ thống người 
 ## Tiến độ
 - Hoàn thành đúng kế hoạch đề ra cho tuần 2
 - Hệ thống đăng nhập hoạt động ổn định
+
+## Mục tiêu tuần 3
+
+Tuần 3 tập trung vào việc xây dựng chức năng quản lý và hiển thị sản phẩm cà phê trên website.
+
+## Các chức năng đã thực hiện
+### 1. Thiết kế bảng Products
+
+- Tạo bảng Products trong SQL Server để lưu thông tin sản phẩm.
+
+- Các trường chính của bảng gồm:
+
+- ProductID
+
+- Name
+
+- Price
+
+- Image
+
+- Description
+
+### 2. Thêm dữ liệu sản phẩm
+
+- Thêm một số sản phẩm cà phê mẫu vào database.
+
+- Các sản phẩm được sử dụng để hiển thị trên website.
+
+### 3. Xây dựng trang hiển thị sản phẩm
+
+- Tạo trang Products.aspx
+
+- Lấy dữ liệu từ bảng Products trong database
+
+- Hiển thị danh sách sản phẩm gồm:
+
+- Tên sản phẩm
+
+- Hình ảnh
+
+- Giá sản phẩm
+
+### 4. Xây dựng trang chi tiết sản phẩm
+
+- Tạo trang ProductDetail.aspx
+
+- Khi người dùng chọn một sản phẩm, hệ thống hiển thị thông tin chi tiết của sản phẩm đó.
+
+## Kết quả đạt được
+
+- Website có thể hiển thị danh sách các loại cà phê.
+
+- Người dùng có thể xem thông tin chi tiết của từng sản phẩm.
+
+## Mục tiêu tuần 4
+
+Tuần 4 tập trung vào việc xây dựng chức năng đặt hàng và quản lý giỏ hàng.
+
+## Các chức năng đã thực hiện
+
+### 1. Thiết kế bảng Orders
+
+- Tạo bảng Orders để lưu thông tin đơn hàng của người dùng.
+
+- Các trường chính:
+
+- OrderID
+
+- UserID
+
+- OrderDate
+
+### 2. Thiết kế bảng OrderDetails
+
+- Tạo bảng OrderDetails để lưu chi tiết sản phẩm trong từng đơn hàng.
+
+- Các trường chính:
+
+- OrderDetailID
+
+- OrderID
+
+- ProductID
+
+- Quantity
+
+### 3. Xây dựng chức năng giỏ hàng
+
+- Tạo trang Cart.aspx
+
+- Cho phép người dùng:
+
+- Thêm sản phẩm vào giỏ hàng
+
+- Xem danh sách sản phẩm trong giỏ hàng
+
+### 4. Lưu đơn hàng vào database
+
+- Khi người dùng đặt hàng:
+
+- Hệ thống tạo một bản ghi trong bảng Orders
+
+- Lưu các sản phẩm trong bảng OrderDetails
+
+## Kết quả đạt được
+
+- Người dùng có thể chọn sản phẩm và thêm vào giỏ hàng.
+
+- Hệ thống lưu thông tin đơn hàng vào cơ sở dữ liệu.
+
+## Mục tiêu tuần 5
+
+Tuần 5 tập trung vào việc hoàn thiện hệ thống và bổ sung chức năng quản lý đơn hàng.
+
+## Các chức năng đã thực hiện
+
+### 1. Xem đơn hàng của người dùng
+
+- Tạo trang MyOrders.aspx
+
+- Hiển thị danh sách đơn hàng mà người dùng đã đặt.
+
+### 2. Xem chi tiết đơn hàng
+
+- Tạo trang OrderDetails.aspx
+
+- Hiển thị danh sách sản phẩm trong từng đơn hàng.
+
+### 3. Quản lý đơn hàng cho Admin
+
+- Tạo trang AdminOrders.aspx
+
+- Cho phép quản trị viên xem danh sách tất cả các đơn hàng trong hệ thống.
+
+### 4. Thống kê đơn hàng
+
+- Tạo trang AdminStatistics.aspx
+
+- Hiển thị số lượng đơn hàng và các thông tin thống kê cơ bản.
+
+## Kết quả đạt được
+
+- Người dùng có thể xem lịch sử đặt hàng của mình.
+
+- Quản trị viên có thể quản lý và theo dõi các đơn hàng trong hệ thống.
