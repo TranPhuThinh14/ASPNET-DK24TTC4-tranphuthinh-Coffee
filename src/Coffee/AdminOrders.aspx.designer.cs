@@ -30,7 +30,7 @@ namespace Coffee
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvOrders;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
         /// lblRevenue control.
@@ -40,5 +40,7 @@ namespace Coffee
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblRevenue;
+
+        protected global::System.Web.UI.WebControls.GridView gvOrders;
     }
 }

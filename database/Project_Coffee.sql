@@ -18,12 +18,12 @@ INSERT INTO Users VALUES
 
 -- PRODUCTS
 CREATE TABLE Products (
-    Id INT IDENTITY PRIMARY KEY,
-    Name NVARCHAR(100),
-    Price DECIMAL(18,0),
-    Image NVARCHAR(200)
-);
-
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(100) NOT NULL,
+    Price DECIMAL(18,0) NOT NULL,
+    Image NVARCHAR(200),
+    Description NVARCHAR(500)
+    );
 -- ORDERS
 CREATE TABLE Orders (
     Id INT IDENTITY PRIMARY KEY,
@@ -52,3 +52,4 @@ VALUES
 (N'Cà phê sữa', 20000),
 (N'Cà phê thịt người', 25000),
 (N'Cà phê đen', 15000);
+

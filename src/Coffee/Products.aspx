@@ -7,7 +7,18 @@
 </head>
 <body>
 <form id="form1" runat="server">
+    <div class="search-box" style="text-align: center; margin: 20px 0;">
+    <asp:TextBox ID="txtSearchUser" runat="server" placeholder="Bạn muốn uống gì hôm nay?..." 
+        Width="300px" Height="30px" style="padding: 5px; border-radius: 15px; border: 1px solid #ccc;"></asp:TextBox>
+    
+    <asp:Button ID="btnSearchUser" runat="server" Text="Tìm kiếm" OnClick="btnSearchUser_Click" 
+        style="border-radius: 15px; padding: 5px 15px; background-color: #4CAF50; color: white; cursor: pointer;" />
+</div>
 
+<asp:DataList ID="dlProducts" runat="server" RepeatColumns="3">
+    <ItemTemplate>
+        </ItemTemplate>
+</asp:DataList>
     <h2>☕ DANH SÁCH CÀ PHÊ</h2>
 
     <asp:GridView ID="gvProducts"

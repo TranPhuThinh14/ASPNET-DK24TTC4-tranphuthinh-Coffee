@@ -22,6 +22,52 @@ Hệ thống cho phép:
 - Entity Framework Core
 - HTML, CSS, Bootstrap
 
+## . Thiết kế hệ thống
+
+### Tổng quan hệ thống
+Mô tả ngắn về hệ thống web bán cà phê, mục tiêu và công nghệ sử dụng
+(ASP.NET Web Forms, SQL Server, Visual Studio).
+
+### Giải pháp thực hiện
+
+#### . Mô tả bài toán
+Hệ thống web bán cà phê cho phép người dùng đăng nhập, xem sản phẩm,
+thêm sản phẩm vào giỏ hàng và đặt hàng.
+
+#### . Xác định yêu cầu và chức năng
+Các chức năng chính của hệ thống:
+- Đăng nhập người dùng
+- Hiển thị danh sách sản phẩm
+- Xem chi tiết sản phẩm
+- Thêm sản phẩm vào giỏ hàng
+- Đặt hàng
+- Xem lịch sử đơn hàng
+
+#### . Mô hình dữ liệu
+Hệ thống sử dụng cơ sở dữ liệu SQL Server với các bảng:
+
+Users  
+Products  
+Orders  
+OrderDetails  
+
+#### . Ràng buộc dữ liệu
+- Orders.UserID → Users.UserID  
+- OrderDetails.OrderID → Orders.OrderID  
+- OrderDetails.ProductID → Products.ProductID  
+
+#### . Mô hình xử lý
+Luồng xử lý của hệ thống:
+
+User → Login → Xem sản phẩm → Thêm vào giỏ → Đặt hàng → Lưu Orders
+
+#### . Mô tả các xử lý
+- Login.aspx: xử lý đăng nhập
+- Products.aspx: hiển thị danh sách sản phẩm
+- ProductDetail.aspx: hiển thị chi tiết sản phẩm
+- Cart.aspx: quản lý giỏ hàng
+- MyOrders.aspx: hiển thị đơn hàng
+
 ## Tiến độ thực hiện
 - Tuần 1: Cài đặt môi trường, tạo database, tạo project ASP.NET MVC
 - Tuần 2: Thiết kế database, chức năng đăng nhập
